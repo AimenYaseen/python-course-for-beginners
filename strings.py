@@ -71,12 +71,19 @@ zfill() Fills the string with a specified number of 0 values at the beginning
 
 
 #New line
+from tkinter import PIESLICE
+
+
 s = 'First line.\nSecond line.'  # \n means newline
 s  # without print(), \n is included in the output
 
 print(s)  # with print(), \n produces a new line
 
-#Raw string
+#remove new line
+print("ncshfsk", end="")   #remove new line, by default has new line character
+print("jksfhuifyeuffbnfb")
+
+#Raw string allows you to use backlash in string litteral
 print('C:\some\name')  # here \n means newline!
 print(r'C:\some\name')  # note the r before the quote
 
@@ -98,7 +105,7 @@ text
 #This only works with two literals though, 
 #not with variables or expressions:
 prefix = 'Did'
-prefix 'Coding'
+#prefix 'Coding'
 prefix + 'Coding'
 
 #Indexing
@@ -123,7 +130,7 @@ word[:4] + word[4:]
 
 
 #changing strings
-word[0] = 'P'
+# word[0] = 'P'
 'P' + word[1:]
 word[:2] + 'di'
 
@@ -155,3 +162,28 @@ str((x, y, ('spam', 'eggs')))
 
 print('{0} and {1}'.format('spam', 'eggs'))
 print('{1} and {0}'.format('spam', 'eggs'))
+
+# Advance Slicing
+
+string = "I am Aimen Yaseen"
+
+print(string[::2]) # [:]  // prints all the string
+# [::2] // 3rd argument represents skipping of characters
+# it prints 0th index then skip next and prints 2nd index
+# 3rd argument is by default 1 i.e. no skipping
+
+# Negative indexing
+print(string[::-1])  # 3rd is be default 1 but when we give -1 it reverses the string
+print(string[::-2])
+# -2 will skip some characters
+
+# built in methods 
+# isalnum || isalpha
+print(string.isalnum()) # False // because it contains spaces
+print(string.isalpha()) # False // because it contains spaces
+print(string.endswith("een")) # True
+print(string.capitalize()) # capitalize 1st character of a sentence
+print(string.count("e"))
+print(string.lower())
+print(string.upper())
+print(string.replace("am", "are"))
