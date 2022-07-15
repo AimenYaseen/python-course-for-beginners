@@ -186,4 +186,4 @@ print(string.capitalize()) # capitalize 1st character of a sentence
 print(string.count("e"))
 print(string.lower())
 print(string.upper())
-print(string.replace("am", "are"))
+print(string.replace("am", "are")) 

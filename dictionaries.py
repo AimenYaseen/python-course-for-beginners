@@ -45,7 +45,7 @@ some_dict = {
 some_dict
 
 
-some_dict[0]  # this will return an error as you need to ref the key by name
+# some_dict[0]  # this will return an error as you need to ref the key by name
 some_dict['a_key']
 some_dict['a_key_4']
 
@@ -66,7 +66,7 @@ some_dict.values()
 
 
 #Dict comprehension
-{x: x**2 for x in (2, 4, 6)}
+print({x: x**2 for x in (2, 4, 6)})
 
 #built-in function dict()
 x = dict(a=1, b=2, c=3, d=4)# creates a dictionary object

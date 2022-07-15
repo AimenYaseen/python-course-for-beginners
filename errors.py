@@ -46,9 +46,9 @@ ValueError Raised when there is a wrong value in a specified data type
 ZeroDivisionError Raised when the second operator in a division is zero
 '''
 #Basic examples
-10 * (1/0)
-4 + spam*3
-'2' + 2
+# 10 * (1/0)
+# 4 + spam*3
+# '2' + 2
 
 #Handling exceptions
 
@@ -92,6 +92,6 @@ def divide(x, y):
     finally:
         print("executing finally clause")
 
-divide(2, 1)
-divide(2, 0)
-divide("2", "1")
+print(divide(2, 1))
+print(divide(2, 0))
+print(divide("2", "1"))

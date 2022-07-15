@@ -40,7 +40,7 @@ lastly, Python has a handy way of making big int's easier to read
 10 / 4  # classic division returns a float
 10 // 4  # floor division discards the fractional part
 10 % 4 # the % operator returns the remainder of the division
-divmod(10,4)
+print(divmod(10,4))
 
 #Fancy sums
 50 - 5*6 
@@ -62,5 +62,5 @@ width * height
 tax = 12.5 / 100
 price = 100.50
 price * tax #this is assigned to '_' and we use it in the next expression
-price + _ #We reference '_' but this expression is now assigned to '_'
-round(_, 2)
+# price + _ #We reference '_' but this expression is now assigned to '_'
+# round(_, 2)

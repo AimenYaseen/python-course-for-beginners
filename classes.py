@@ -33,7 +33,7 @@ class MyClass:
 
 MyClass.i # return the int
 MyClass.f # returns a function object
-MyClass.__doc__ # magic method/dunder method that return the text literal
+print(MyClass.__doc__) # magic method/dunder method that return the text literal
 
 x = MyClass() #instantiates the class
 x.i # return the int
